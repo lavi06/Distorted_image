@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 def fun(A,B,C,D, path):
 	
@@ -24,6 +25,7 @@ def fun(A,B,C,D, path):
 	return;
 
 		
-	
-fun([28,387],[389,390],[368,52],[56,65], 'C:/Users/lavi goyal/Desktop/rabbit.jpg')  # parameters (Co-ordinates, path)
+dir = os.path.dirname(__file__)
+filename = os.path.join(dir, 'rabbit.jpg')   	
+fun([28,387],[389,390],[368,52],[56,65], filename)  # parameters (Co-ordinates, path)
 	
